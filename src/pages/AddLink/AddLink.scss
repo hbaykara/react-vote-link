@@ -1,0 +1,25 @@
+.add-link {
+  width: 420px;
+  
+  &__title {
+    font-size: 32px;
+    font-weight: 900;
+    letter-spacing: -1px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__error {
+    color: #bf1650;
+    font-size: 14px;
+    margin-top: 5px;
+
+    &::before {
+      display: inline;
+      content: "⚠ ";
+    }
+  }
+}

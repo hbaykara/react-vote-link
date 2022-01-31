@@ -1,0 +1,17 @@
+.return-link {
+  margin-bottom: 30px;
+
+  &__text {
+    display: flex;
+    align-items: center;
+    color: #000;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 700;
+    letter-spacing: -.05px;
+  }
+
+  span {
+    margin-left: 5px;
+  }
+}

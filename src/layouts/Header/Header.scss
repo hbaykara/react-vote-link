@@ -1,0 +1,26 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: 1px solid #000;
+  padding: 16px 0;
+  margin-bottom: 25px;
+
+  &__logo {
+    h1 {
+      font-size: 36px;
+      letter-spacing: -1px;
+      font-weight: 400;
+    }
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 32px;
+
+    strong {
+      font-weight: 700;
+    }
+  }
+}

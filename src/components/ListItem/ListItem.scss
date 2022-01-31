@@ -1,0 +1,82 @@
+.list-item {
+  $self: &;
+  display: flex;
+  margin-bottom: 20px;
+  padding: 5px;
+  border-radius: 5px;
+  position: relative;
+  border: 1px solid transparent;
+
+  &:hover {
+    background-color: #f7f7f7;
+    border: 1px solid #eaeaea;
+    cursor: pointer;
+
+    #{$self}__delete-icon {
+      display: block;
+    }
+  }
+
+  &__point {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ececec;
+    border: 1px solid #979797;
+    border-radius: 5px;
+
+    strong {
+      font-size: 36px;
+      line-height: 36px;
+      font-weight: 900;
+    }
+
+    span {
+      font-size: 12px;
+    }
+  }
+
+  &__detail {
+    flex: 1;
+    padding-left: 15px;
+  }
+
+  &__name {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 22px;
+    margin-top: 2px;
+  }
+
+  &__url {
+    margin-bottom: 25px;
+  }
+
+  &__vote {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 600;
+    color: #bbb;
+
+    span {
+      &:hover {
+        color: gray;
+      }
+    }
+  }
+
+  &__delete-icon {
+    display: none;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+
+    svg {
+      color: red;
+      font-size: 28px;
+    }
+  }
+}

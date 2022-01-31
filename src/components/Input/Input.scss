@@ -1,0 +1,22 @@
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+
+  label {
+    display: inline-block;
+    margin-bottom: 5px;
+  }
+
+  input {
+    display: block;
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #495057;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+  }
+}
